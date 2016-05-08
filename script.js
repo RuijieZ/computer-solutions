@@ -7,17 +7,25 @@ app.config(['$routeProvider', function($routeProvider) {
 			templateUrl: 'main.html',
 			controller:'mainController'
 		})
+		.when("/main", {
+			templateUrl: 'main.html',
+			controller:'mainController'
+		})
 		.when("/about", {
 			templateUrl: 'about.html',
-			controller: 'aboutController'
+			controller: 'mainController'
 		})
+		.when("/contact", {
+			templateUrl: 'contact.html',
+			controller: 'mainController'
+		})
+		.when("/service", {
+			templateUrl: 'service.html',
+			controller: 'mainController'
+		})
+
 }]);
 
 app.controller('mainController', ['$scope', function($scope) {
 	console.log("the mainController is running");
-
-}]);
-
-app.controller('aboutController', ['$scope', function($scope) {
-
 }]);
