@@ -24,21 +24,13 @@
           <h2>Contact</h2>
           <p> Email 12345@example.com </p>
           <h3> Locations </h3>
-          <ul class="location">
-              <li>123 King street</li>
-              <li>Lynn City, MA</li>
-              <li>America</li>
-          </ul>
-          <ul class="location">
-              <li>456 Walnut street</li>
-              <li>Ada City, NY</li>
-              <li>America</li>
-          </ul>
-          <ul class="location">
-              <li>789 Queen street</li>
-              <li>James City, FL</li>
-              <li>America</li>
-          </ul>
+          <div ng-repeat="location in locations">
+              <ul class="location">
+                  <li>{{location.street}}</li>
+                  <li>{{location.city}}</li>
+                  <li>{{location.country}}</li>
+              </ul>
+          </div>
         </div>
       </div>
     </div> <!-- /container -->
