@@ -1,0 +1,20 @@
+[
+    {
+        "id": 0,
+        "street": "123 King street",
+        "city": "Lynn City, MA",
+        "country": "United States"
+    },
+    {
+        "id": 1,
+        "street": "456 Queen street",
+        "city": "Ada City, NY",
+        "country": "United States"
+    },
+    {
+        "id": 2,
+        "street": "789 Walnut street",
+        "city": "James City, CA",
+        "country": "United States"
+    }   
+]
